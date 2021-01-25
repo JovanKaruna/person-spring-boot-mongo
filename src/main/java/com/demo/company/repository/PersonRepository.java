@@ -7,7 +7,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
 
-public interface PersonRepository extends MongoRepository<Person, String>, PersonCustomRepository {
+public interface PersonRepository extends MongoRepository<Person, String> {
 
 	Person findFirstByPersonCodeAndMarkForDeleteFalse(String personCode);
 
